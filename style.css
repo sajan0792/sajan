@@ -102,6 +102,14 @@ li a:hover{
 .resume{
     border-radius: 10px;
 }
+button a{
+    color: black;
+    text-decoration: none;
+}
+button a:hover{
+    color: black;
+}
+
 
 
 
@@ -195,6 +203,11 @@ li a:hover{
     justify-content: center;
     margin-top: 115px;
     transition: all 0.5s ease;
+}
+.down-arow a{
+    color: white;
+
+
 }
 
 /* -----about--- */
