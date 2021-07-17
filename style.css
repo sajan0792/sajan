@@ -2,8 +2,9 @@
 
    body{
     background-color: var(--bg-color-body);
+    
    }
-
+ 
 
    :root{
        --bg-hero :linear-gradient(90deg, rgba(49,143,134,1) 5%, rgba(16,99,87,1) 100%);
@@ -206,6 +207,7 @@ button a:hover{
 
 .hero-text h4{
     margin-top: 150px;
+    font-size: 35px;
 }
 .hero-text h1{
     font-size: 52px;
@@ -278,8 +280,7 @@ button a:hover{
     width: 80px;
 }
 .skills-sub h5{
-    line-height: 70px;
-    margin: 0 30px;
+    margin: auto 30px;
 }
 
 /* ---work---- */
@@ -414,8 +415,11 @@ footer{
 
     }
     .bar{
-        width: 400px;
+        width: calc(100% - 20%);
         margin: 0 auto;
+    }
+    .skills-sub{
+        height: 120px;
     }
   
    .work-filter ul{
@@ -424,6 +428,7 @@ footer{
    .item-box{
        width: 300px;
    }
+
    .contact-detail{
        display: flex;
        flex-direction: column;
