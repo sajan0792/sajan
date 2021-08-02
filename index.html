@@ -37,7 +37,10 @@
       <li class="nav-item text-center"><a href="#skills" class="nav-link">Skills</a></li>
       <li class="nav-item text-center"><a href="#work" class="nav-link">My Work</a></li>
       <li class="nav-item text-center"><a href="#contact" class="nav-link">Contact</a></li>
-      <img src="files/moon1.png" id="moon" alt="">
+   
+      <li class="nav-link mode" id="mode">Dark Mode</li>
+
+      <!-- <caption>Dark Mode</caption> -->
     </ul>
   </div>
 </nav>
@@ -62,7 +65,7 @@
           <div></div>
         </div>
         <div class="down-arow text-white">
-         <a href="#about"><i class="fas fa-angle-double-down fa-3x"></i></a>
+         <a href="#work"><i class="fas fa-angle-double-down fa-3x"></i></a>
         </div>
     </header>
 
@@ -76,7 +79,7 @@
         <div class="row">
          
           <div class="col-lg-5 col-12 mx-auto py-3" data-aos="fade-down">
-            <img src="files/1.png" class="img-fluid" alt="">
+            <img src="files/1-min.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-5 col-12 mx-auto about-text px-4" data-aos="fade-down">
             <p class="py-4">My name is SajanPreet Singh. I am a Frontend Developer and i live in Tarn Taran, Punjab. I can make Responsive Web Layout. Feel Free to take a look at my Projects.</p>
@@ -156,7 +159,7 @@
 
 
     <!-- ----work---- -->
-    <section class="work pt-5" id="work" data-aos="fade-up">
+    <section class="work pt-5 mt-5" id="work" data-aos="fade-up">
       <div class="heading text-center"><h2>My Work</h2>
         <hr class="w-25 mx-auto"></div>
 
@@ -172,12 +175,14 @@
 
           <div class="project container " data-aos="fade-up">
             <div class="item-box html"><a target="_blank"  href="https://sajanpreet.github.io/medicinelab/"><img src="files/mlab.jpg" class="img-fluid img-thumbnail" alt=""></a></div>
-
-            
+     
             <div class="item-box javascript"><a  target="_blank" href="https://sajanpreet.github.io/Validation-Form/"><img src="files/form.png" class="img-fluid img-thumbnail" alt=""></a></div>
- 
- </div>
          
+            <div class="item-box wordpress"><a  target="_blank" href="http://furniture-store.ga/"><img src="files/furniture.jpg" class="img-fluid img-thumbnail" alt=""></a></div></div>
+         
+
+
+          </div>
         </section>
 
     </section>
@@ -189,21 +194,23 @@
         <hr class="w-25 mx-auto"></div>
 
         <div class="container contact-detail py-4" >
-          <div class="contact-box phone" data-aos="fade-down">
+          <div class="contact-box phone" data-aos="fade">
           <i class="fas fa-phone-alt fa-2x py-2 icon-contact"></i>
           <h6>Phone</h6>
           <p>95929-47777</p></div>
 
-          <div class="contact-box email"  data-aos="fade-up">
+          <div class="contact-box email" data-aos="fade">
             <i class="fas fa-envelope fa-2x py-2 icon-contact"></i>
             <h6>Gmail</h6>
             <p>sajan0792@gmail.com</p></div>
     </div>
-    <a href="#" id="scroll-up"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- btn for top -->
+    <!-- <a href="#" id="scroll-up"><i class="fas fa-arrow-up"></i></a> -->
 
     <!-- ---footer---- -->
     <footer>
-      <p class="text-white">Design By <span>Sajanpreet</span></p>
+      <p class="text-white">Design By <a href="#" class=""> <span>Sajanpreet</span></a></p>
     </footer>
 
 
@@ -239,14 +246,15 @@
     })
 
     //dark-mode
-    var moon = document.getElementById('moon');
-    $(moon).click(function(){
+    var mode = document.getElementById('mode');
+    $(mode).click(function(){
       $('body').toggleClass('dark-theme');
       if(document.body.classList.contains('dark-theme')){
-        moon.src = 'files/sun.png';
+        mode.style.color = "black"
       }
       else{
-        moon.src = 'files/moon1.png';
+        mode.style.color = "white"
+
       }
     })
   })
