@@ -1,4 +1,5 @@
-*{margin: 0; padding: 0; box-sizing: border-box;}
+*{margin: 0; padding: 0; box-sizing: border-box;  font-family: 'Ubuntu', sans-serif;}
+
 
    body{
     background-color: var(--bg-color-body);
@@ -39,6 +40,16 @@
        background-color:rgb(153, 153, 153);
        border-radius: 9px;
    }
+  
+   #loading{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: white url(files/loader.gif) no-repeat center;
+    z-index: 999;
+}
+
+
 header{
     width: 100%;
     height: 100vh;
